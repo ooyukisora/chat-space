@@ -26,9 +26,9 @@ Things you may want to cover:
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|email|integer|null: false, unique: true, foreign_key: true|
-|password|integer|null false, foreign_key: true|
-|nickname|string|null: false, foreign_key: true|
+|email|integer|null: false, unique: true|
+|password|integer|null false|
+|nickname|string|null: false|
 
 ### Association
 - has_many :tweets
@@ -50,8 +50,7 @@ Things you may want to cover:
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|groupname|string|null: false, foregin_key: true|
-|user_id|integer|null: false, foreign_key: true|
+|name|string|null: false, foregin_key: true|
 
 ### Association
 - has_many :users_thorough.group_users
@@ -61,8 +60,8 @@ Things you may want to cover:
 ## tweetsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false, foregin_key: true|
-|image|string|null: false, foregin_key: true|
+|text|text| |
+|image|string| |
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
