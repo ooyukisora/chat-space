@@ -1,0 +1,32 @@
+.main
+  .main__top
+    .main__top__name
+      yuuki
+      .main__top__name__member
+        Member : yuuki
+    .main__top__box__edit
+      = link_to "#",class: "main__edit" do
+        Edit
+  .main__content
+    .main__content__name__box
+      .main__content__name__box__list
+        yuuki
+      .main__content__name__box__time
+        2020/03/09(Mon) 15:11:01
+    .main__message
+      おはよう！
+    .main__content__box
+      .main__content__box__name
+        yuuki
+      .main__content__box__time
+        2020/03/09(Mon) 16:05:01
+    .main__contents__message
+      今日は夜から雨
+  .main__bottom
+    %form.new_message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class: "submit-btn"}
