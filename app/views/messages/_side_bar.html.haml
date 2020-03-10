@@ -1,12 +1,12 @@
 .side
   .side__top
     .side__top__box
-      %p yuuki
+      = current_user.name
       %ul.side__top__box__edit
+        = link_to edit_user_path(current_user), class: "side__btn" do
+          = icon('fas', 'cog', class: 'icon')
         = link_to "#",class: "side__btn" do
-          = icon('fas', 'cog')
-        = link_to "#",class: "side__btn" do
-          = icon('fas', 'edit')
+          = icon('fas', 'edit', class: 'icon')
   .side__list
     .side__list__box
       %p.side__list__name techcamp
