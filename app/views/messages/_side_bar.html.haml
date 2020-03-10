@@ -5,12 +5,13 @@
       %ul.side__top__box__edit
         = link_to edit_user_path(current_user), class: "side__btn" do
           = icon('fas', 'cog', class: 'icon')
-        = link_to "#",class: "side__btn" do
+        = link_to new_group_path, class: "side__btn" do
           = icon('fas', 'edit', class: 'icon')
   .side__list
-    .side__list__box
-      %p.side__list__name techcamp
-      %p.side__list__message まだメッセージがありません
-
-
-
+    - current_user.groups.each do |group|
+      .side__list__box
+        = link_to '#', class: "side__list__box__group" do
+          .side__list__name
+            = group.name
+          .side__list__message 
+            まだメッセージがありません

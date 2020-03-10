@@ -50,12 +50,17 @@ $dark: #434a54;
     margin-left:20px;
     margin-bottom: 40px;
   }
+  &__list__box__group{
+    text-decoration: none;
+  }
   &__list__name {
     font-size: 15px;
     padding-bottom: 5px;
+    color: white;
   }
   &__list__message{
     font-size: 11px;
+    color: white;
   }
 }
 
