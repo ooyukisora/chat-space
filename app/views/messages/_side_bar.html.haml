@@ -10,8 +10,8 @@
   .side__list
     - current_user.groups.each do |group|
       .side__list__box
-        = link_to '#', class: "side__list__box__group" do
+        = link_to group_messages_path(group), class: "side__list__box__group" do
           .side__list__name
             = group.name
           .side__list__message 
-            まだメッセージがありません
+            = group.show_last_message
