@@ -11,9 +11,11 @@
     .main__top__box__edit
       = link_to edit_group_path(params[:group_id]),class: "main__edit" do
         Edit
+
   .main__content
     .main__content__name__box
       = render @messages
+      
   .main__bottom
     .new_message
       .input-box
