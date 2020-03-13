@@ -103,8 +103,10 @@ $dark: #434a54;
       height: calc(100vh - 100px - 90px);
       background-color: #fafafa;
       padding-left: 40px;
+      overflow: scroll;
       &__name__box{
         padding-top: 35px;
+        .message{
         .upper-message{
           display: flex;
         }
@@ -124,6 +126,7 @@ $dark: #434a54;
         padding-top: 12px;
         padding-bottom: 40px;
       }
+    }
     }  //content終わり
     &__bottom {
       background-color: #d2d2d2;
