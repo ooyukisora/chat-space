@@ -44,4 +44,5 @@ namespace :deploy do
     end
   end
   before :starting, 'deploy:upload'
-  after :finishing,
+  after :finishing, 'deploy:cleanup'
+end
